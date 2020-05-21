@@ -47,6 +47,7 @@
     width: 100vw;
     top: 0;
     font-family: 'IBM Plex Sans', sans-serif;
+    z-index: 1;
   }
   
   .menu ul {
@@ -91,11 +92,13 @@
     font-size: 1.2em;
   }
   
+  .contato,
   .portfolio {
     padding: 2em;
-    height: 100vh;
+    min-height: 100vh;
   }
   
+  .contato h2,
   .portfolio h2 {
     font-family: 'Comfortaa', cursive;
     color: whitesmoke;
@@ -145,18 +148,36 @@
     width: 200px;
     object-fit: cover;
     object-position: left bottom;
+    transition: transform 500ms;
+  }
+
+  .img-portfolio:hover{
+    transform: scale(1.1);
   }
 
   figcaption{
     color: whitesmoke;
-    background-color: #0169AB;
     padding: 0px 0px;
     width: 200px;
     text-align: center;
     justify-content: center;
+    font-family: 'DM Mono' , normal;
   }
 
+  figcaption:active,
   figcaption:hover{
     text-decoration: underline;
     cursor: pointer;
+    text-shadow: 0px 0px 10px rgb(133, 14, 14);
+  }
+
+  .contato a {
+    color: whitesmoke;
+    font-size: 5em;
+  }
+
+  .contato a:active,
+  .contato a:hover{
+    text-decoration: none;
+    text-shadow: 0px 0px 10px rgb(133, 14, 14);
   }
