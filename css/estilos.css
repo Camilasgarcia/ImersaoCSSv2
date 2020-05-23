@@ -6,8 +6,7 @@
   }
   
   body {
-    background-image: url('https://s3-prod.crainsnewyork.com/styles/width_792/s3/Chrysler.jpg');
-    background-size: 100vw auto; 
+    background-color: #0582CA;
     font-family: 'Roboto Mono', monospace;
     height: 100vh;
     font-size: 10px;
@@ -39,6 +38,8 @@
     display: flex;
     justify-content: right;
     align-items: center;
+    background-image: url('https://s3-prod.crainsnewyork.com/styles/width_792/s3/Chrysler.jpg');
+    background-size: 100vw auto; 
   }
   
   .menu {
@@ -92,18 +93,49 @@
     font-size: 1.2em;
   }
   
+  .sobre,
   .contato,
   .portfolio {
     padding: 2em;
     min-height: 100vh;
   }
   
+  .sobre h2,
   .contato h2,
   .portfolio h2 {
     font-family: 'Comfortaa', cursive;
     color: whitesmoke;
     margin-bottom: 1.5em;
     font-size: 2em;
+  }
+
+    @media(min-width: 1200px){
+      .container {
+        max-width:1200px ;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+
+  .sobre a{
+    color: whitesmoke;
+    text-decoration: underline;
+  }
+
+  .sobre .avatar{
+    float: right;
+    margin-left: 2em;
+  }
+
+  .sobre .avatar img{
+    border-radius: 75%;
+  }
+
+  .sobre p{
+    color: whitesmoke;
+    margin-bottom: 2em;
+    text-indent: 2em;
+    text-align: justify;
   }
   
   .portfolio .grid {
